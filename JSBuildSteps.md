@@ -1,3 +1,4 @@
+
 #### Here is a brief list of the steps/actions I expect will be present in most JavaScript web app builds. Of course, they will vary from project to project and by developer taste.
 
 * Transcompiling JavaScript: CoffeeScript, Dart, Babel, Traceur etc.
@@ -20,5 +21,7 @@
 * Running Unit Tests
 * Running JavaScript and CSS Linters: jshint, csslint etc.
 * Dependencies: handle dependencies on npm and Bower packages, Browserfy etc.
-* 
+*
 
+#### Reference:
+  * TBD - TODO: cite source article for this list
