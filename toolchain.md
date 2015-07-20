@@ -1,10 +1,10 @@
 ## HTML5 Boilerplate Template
-1) Begin by using HTML5 Boilerplate as a starter project template, 
+1) Begin by using HTML5 Boilerplate as a starter project template,
   * download the template locall
   * add bash alias to copy that folder when starting a new project
   * e.g. $> 'html5-new PROJECTNAME' will create a folder named PROJECTNAME
       and will copy the contents of html5boilerplate into PROJECTNAME
-      
+
 ## Frontend Toolchain Setup
 #### Need NodeJS, npm, grunt
 2) Then add the Frontend Toolchain using NPM and Grunt.
@@ -13,7 +13,7 @@ Assuming NPM and grunt-cli preinstalled on system.  If not, install them with:
 ```
 
 ##### npm init
-Set up a package.json in your project ... 
+Set up a package.json in your project ...
 This command will set one up after asking/prompting on several questions
 about the project
 ```
@@ -41,8 +41,8 @@ $> git clone https://github.com/gruntjs/grunt-init-gruntfile.git
  * [JSCS.info](http://jscs.info/overview.html)
  * [JSCS - styleguide plugin](https://github.com/jscs-dev/grunt-jscs)
  * [JS Beautifier - plugin](https://github.com/vkadam/grunt-jsbeautifier)
- * 
- 
+ *
+
 #### ESLint
 Add eslint to toolchain
 Install eslint:
@@ -73,7 +73,7 @@ module.exports = function (grunt) {
     eslint: {
       all: ['**/*.js'],
       options: {
-       config: "path/to/rules.json" 
+       config: "path/to/rules.json"
     }
   });
 
@@ -148,7 +148,7 @@ grunt.loadNpmTasks("grunt-jsbeautifier");
  * options.mode (optional)
  * options.dest (optional)
  * options.config (optional)
- 
+
 ##### Default options from js-beautify can be used
 ```
   "jsbeautifier": {
@@ -201,7 +201,7 @@ jsbeautifier: {
 }
 ```
 
-### CSS 
+### CSS
 #### CSS Plugin List
  * [CSSLint](https://github.com/gruntjs/grunt-contrib-csslint)
  * [CSS reformatter - Revizor](https://github.com/atrolov/grunt-revizor)
@@ -209,7 +209,7 @@ jsbeautifier: {
  * [Unused CSS grunt-ucss](https://github.com/ullmark/grunt-ucss)
  * [Autoprefixer](autoprefixer)
  * [W3C/CSS Validation](https://github.com/mryvlin/grunt-w3c-validation)
- 
+
 #### CSS Lint
 npm install grunt-contrib-csslint --save-dev
 grunt.loadNpmTasks('grunt-contrib-csslint');
@@ -316,8 +316,8 @@ css-validation: {
  * [HTML Validation](https://github.com/praveenvijayan/grunt-html-validation)
  * [HTML Linting](https://www.npmjs.com/package/grunt-htmllint)
  * [HTML Tidy](https://www.npmjs.com/package/grunt-htmltidy)
- * 
- 
+ *
+
 #### HTML Lint
 ###### Installing:
 ```
@@ -404,10 +404,10 @@ Example: In your project's Gruntfile, add a section named htmltidy to the data o
 grunt.initConfig({
   htmltidy: {
     options: {
-      // Task-specific options go here. 
+      // Task-specific options go here.
     },
     your_target: {
-      // Target-specific file lists and/or options go here. 
+      // Target-specific file lists and/or options go here.
     },
   },
 });
@@ -431,7 +431,7 @@ grunt.loadNpmTasks('grunt-contrib-jasmine');
 [... more options](https://github.com/gruntjs/grunt-contrib-jasmine#options)
 
 ###### Basic Use
-``` 
+```
 // Example configuration
 grunt.initConfig({
   jasmine: {
@@ -470,7 +470,7 @@ grunt.initConfig({
  * [Shell Spawn](https://www.npmjs.com/package/grunt-shell-spawn)
  * [Assemble Boilerplates](https://github.com/assemble/boilerplates)
  * [Grunticon](https://github.com/filamentgroup/grunticon)
- 
+
 #### BrowserSync
 Install Browsersync utility first
 ```
@@ -547,8 +547,8 @@ module.exports = function (grunt) {
 ```
 
 #### Tags - scripts/links - grunt-script-link-tags
-#### Static analysis reports w/plato 
-#### Code complexity 
+#### Static analysis reports w/plato
+#### Code complexity
 #### File changes - grunt-newer
 #### File changes - grunt-contrib-watch
 #### Local server - grunt-contrib-connect
@@ -564,3 +564,4 @@ module.exports = function (grunt) {
  * [Configuring ESLint](http://eslint.org/docs/user-guide/configuring.html)
  * [Using Grunt w/CSS -- src/dest/build folders setup](http://blog.pamelafox.org/2012/05/using-gruntjs-with-css.html)
  * [Writing your Own Yeoman Generator](http://yeoman.io/authoring/index.html)
+ * [Pamela Fox's example Gruntfile](https://github.com/pamelafox/5lide/blob/master/editor/grunt.js)
